@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Konjički klub Hercules</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav2">
+        <a href="home.html" class="brand"><img src="images/LOGO.png" class="picture"></a>
+
+        <img src="images/icons8-menu-80.png" class="img1">
+        <ul class="menu">
+            <img src="images/icons8-close-48.png" class="img2">
+
+            <li><a class="active" href="onama.html">O nama</a></li>
+            <li><a href="skolajahanja.html">Škola jahanja</a></li>
+            <li><a href="terensko.html">Terensko jahanje</a></li>
+            <li><a href="ujahivanje.html">Ujahivanje i trening</a></li>
+            <li><a href="ostala.html">Ostala ponuda</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <img src="images/icons8-horseshoe-48.png" class="img3">
+            <div class="links">
+                <a href="https://www.facebook.com/hercules.konjickiklub"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/kk.hercules?igsh=YnJ4emgxcGY1YjV4"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:konjickiklubhercules@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </ul>
+
+    </nav>
+    <div class="slika">
+        <img src="images/WhatsApp Image 2023-08-01 at 21.19.54 – kopija.jpeg">
+        <h1 class="h1-onama">KONTAKT</h1>
+    </div>
+    <div class="school1">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178729.32380959074!2d18.475827188629406!3d45.577563309671746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475cdd3ac488dbc5%3A0x301d23da45150355!2sKonji%C4%8Dki%20klub%20Hercules!5e0!3m2!1shr!2shr!4v1698078110840!5m2!1shr!2shr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <hr>
+        <br><br>
+        <section class="sec">
+            <div>
+                <i class="fa fa-home"></i>
+                <p><strong>Ružina ulica 4, </strong>Vardarac</p>
+            </div>
+            <br>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>tel.: <strong>098/938 48 46</strong></p>
+            </div>
+            <br>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p>e-mail: konjickiklubhercules@gmail.com</p>
+            </div>
+            <br>
+            <div>
+                <i class="fab fa-facebook-f"></i>
+                <p>facebook: <a href="#"><strong> Konjički klub Hercules</strong></a> </p>
+            </div>
+            <br>
+            <div>
+                <i class="fab fa-instagram"></i>
+                <p>instagram: <a href="#"><strong>@kk.hercules</strong></a> </p>
+            </div>
+        </section>
+        <h1 class="veselimo">Veselimo se Vašem dolasku i nestrpljivo Vas čekamo!</h1>
+    </div>
+
+    <div class="media-icons">
+        <a href="https://www.facebook.com/hercules.konjickiklub"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/kk.hercules?igsh=YnJ4emgxcGY1YjV4"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:konjickiklubhercules@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuIcon = document.querySelector('.img1');
+            var menu = document.querySelector('.menu');
+
+            menuIcon.addEventListener('click', function () {
+                menu.classList.toggle('active');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var img2 = document.querySelector('.nav2 .menu .img2');
+            var menu = document.querySelector('.nav2 .menu');
+
+            img2.addEventListener('click', function () {
+                menu.classList.remove('active');
+            });
+        });
+
+
+        let numberImg = 1;
+        showImg(numberImg);
+
+        function followinImg(i) {
+            showImg(numberImg = numberImg + i)
+        }
+
+        function nowImg(i) {
+            showImg(numberImg = i)
+        }
+
+        function showImg(i) {
+            var j;
+            const img = document.getElementsByClassName("galery-img");
+            var len = img.length
+            for (let j = 0; j < img.length; j++) {
+                img[j].style.display = "none";
+            }
+            if (i > len) {
+                numberImg = 1;
+            }
+
+            if (i < 1) {
+                numberImg = len;
+            }
+
+            img[numberImg - 1].style.display = "block";
+
+        }
+    </script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="item">
+                <div class="footerp">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <p>Konjički klub Hercules</p>
+                </div>
+                <div class="footerp">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <p>kk.hercules</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="footerp">
+                    <a href=""><i class="far fa-envelope"></i></a>
+                    <p>konjickiklubhercules@gmail.com</p>
+                </div>
+                <div class="footerp">
+                    <a href="#" class="telefon"><i class="fas fa-phone"></i></a>
+                    <p>098/938 48 46</p>
+                </div>
+            </div>
+        </div>
+        <div class="loc">
+            <a href="https://www.google.com/maps/place/Konji%C4%8Dki+klub+Hercules/@45.6251051,18.7720767,17z/data=!3m1!4b1!4m6!3m5!1s0x475cdd3ac488dbc5:0x301d23da45150355!8m2!3d45.6251051!4d18.7746516!16s%2Fg%2F11fm5nv32t?entry=ttu"
+                class="location"><i class="fas fa-map-marker-alt"></i></a>
+            <p>Ružina 4, Vardarac</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

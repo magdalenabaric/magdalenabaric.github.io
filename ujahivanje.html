@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Konjički klub Hercules</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav2">
+        <a href="home.html" class="brand"><img src="images/LOGO.png" class="picture"></a>
+
+        <img src="images/icons8-menu-80.png" class="img1">
+        <ul class="menu">
+            <img src="images/icons8-close-48.png" class="img2">
+
+            <li><a class="active" href="onama.html">O nama</a></li>
+            <li><a href="skolajahanja.html">Škola jahanja</a></li>
+            <li><a href="terensko.html">Terensko jahanje</a></li>
+            <li><a href="ujahivanje.html">Ujahivanje i trening</a></li>
+            <li><a href="ostala.html">Ostala ponuda</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <img src="images/icons8-horseshoe-48.png" class="img3">
+            <div class="links">
+                <a href="https://www.facebook.com/hercules.konjickiklub"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/kk.hercules?igsh=YnJ4emgxcGY1YjV4"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:konjickiklubhercules@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </ul>
+
+    </nav>
+    <div class="slika">
+        <img src="images/naslovna5 – kopija (2).jpg">
+        <h1 class="h1-onama">UJAHIVANJE I TRENING</h1>
+    </div>
+    <div class="school1">
+        U našem klubu brinemo se za konje od najranije dobi, a za one od 3 godine starosti pružamo mogućnost ujahivanja.
+        Konja ćemo naučiti hod, kas i galop uz naredbe te ga izvježbati kako bi njegovi vlasnici kasnije imali ugodne
+        avanture s njim. Kako bismo to osigurali, sam vlasnik bit će uključen u proces kako bi se stvorila povezanost
+        između konja i njegovog vlasnika. Samo ujahivanje počinje od
+        rada sa konjem na tlu, nakom čega, kada je konj spreman na to, kreće i rad sa jahačem na konju. Svakom konju
+        individualno se i u potpunosti posvećujemo kako bi rezultati
+        bili što bolji, a vlasnici i njihovi četveronožni ljubimci što zadovoljniji.
+        <hr class="line2">
+        <section class="img-row3">
+            <img src="images/ujah.jpg">
+            <img src="images/ujah2.jpg">
+            <img src="images/ujah3.jpg">
+        </section>
+        <hr class="line3">
+        <p class="ujah-p">
+            Nakon što smo konja pripremili na osnovne kretnje te ga naučili kako se kretati u njima, odrađivat ćemo
+            potrebne treninge kako bi kasnije jahanje bilo sigurno. Privikavat ćemo konja na jahanje na terenu,
+            povećavat ćemo mu izdržljivost i snagu odgovarajućim treninzima, privikavati ga na treniranje s drugim
+            konjima i još mnogo stvari koje su potrebne za kvalitetno jahanje samog konja.
+        </p>
+        <hr class="line2">
+        <section class="img-row3">
+            <img src="images/ujahj (1).jpg">
+            <img src="images/ujahj (2).jpg">
+            <img src="images/ujahj (3).jpg">
+        </section>
+        <hr class="line3">
+    </div>
+    <div class="media-icons">
+        <a href="https://www.facebook.com/hercules.konjickiklub"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/kk.hercules?igsh=YnJ4emgxcGY1YjV4"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:konjickiklubhercules@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuIcon = document.querySelector('.img1');
+            var menu = document.querySelector('.menu');
+
+            menuIcon.addEventListener('click', function () {
+                menu.classList.toggle('active');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var img2 = document.querySelector('.nav2 .menu .img2');
+            var menu = document.querySelector('.nav2 .menu');
+
+            img2.addEventListener('click', function () {
+                menu.classList.remove('active');
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="item">
+                <div class="footerp">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <p>Konjički klub Hercules</p>
+                </div>
+                <div class="footerp">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <p>kk.hercules</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="footerp">
+                    <a href=""><i class="far fa-envelope"></i></a>
+                    <p>konjickiklubhercules@gmail.com</p>
+                </div>
+                <div class="footerp">
+                    <a href="#" class="telefon"><i class="fas fa-phone"></i></a>
+                    <p>098/938 48 46</p>
+                </div>
+            </div>
+        </div>
+        <div class="loc">
+            <a href="https://www.google.com/maps/place/Konji%C4%8Dki+klub+Hercules/@45.6251051,18.7720767,17z/data=!3m1!4b1!4m6!3m5!1s0x475cdd3ac488dbc5:0x301d23da45150355!8m2!3d45.6251051!4d18.7746516!16s%2Fg%2F11fm5nv32t?entry=ttu"
+                class="location"><i class="fas fa-map-marker-alt"></i></a>
+            <p>Ružina 4, Vardarac</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
